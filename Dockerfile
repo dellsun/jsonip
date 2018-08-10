@@ -5,10 +5,10 @@ RUN yum -y install epel-release
 RUN yum -y install python-pip
 RUN pip install Django==1.11.15
 
-ADD jsonip/ /opt/
+ADD jsonip/ /opt/jsonip/
 
 ENV TZ Asia/Shanghai
 EXPOSE 9999
-WORKDIR /opt/jsonip/jsonip
+WORKDIR /opt/jsonip/
 
-# ENTRYPOINT python manage.py runserver 0.0.0.0:9999
+ENTRYPOINT python manage.py runserver 0.0.0.0:9999
