@@ -11,4 +11,4 @@ ENV TZ Asia/Shanghai
 EXPOSE 9999
 WORKDIR /opt/jsonip/jsonip
 
-ENTRYPOINT python manage.py runserver 0.0.0.0:9999
+# ENTRYPOINT python manage.py runserver 0.0.0.0:9999
