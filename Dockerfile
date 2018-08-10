@@ -9,6 +9,6 @@ ADD jsonip/ /opt/
 
 ENV TZ Asia/Shanghai
 EXPOSE 9999
-WORKDIR /opt/jsonip
+WORKDIR /opt/jsonip/jsonip
 
 ENTRYPOINT python manage.py runserver 0.0.0.0:9999
